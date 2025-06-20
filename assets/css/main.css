@@ -78,10 +78,10 @@ input, select, textarea {
 		width: device-width;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 100%) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 100%;
 		}
 
 	}
@@ -108,9 +108,7 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-a.icon.brands {
-  text-decoration: none;
-}
+
 
 .video-container {
   position: relative;

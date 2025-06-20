@@ -108,6 +108,9 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+a.icon.brands {
+  text-decoration: none;
+}
 
 .video-container {
   position: relative;
@@ -144,7 +147,7 @@ input, select, textarea {
 		font-size: 20pt;
 	}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 100%) {
 
 			html {
 				font-size: 12pt;
@@ -152,7 +155,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 100%) {
 
 			html {
 				font-size: 11pt;
@@ -160,7 +163,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 100%) {
 
 			html {
 				font-size: 10pt;

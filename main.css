@@ -333,21 +333,22 @@ input, select, textarea {
 		text-decoration: none !important;
   		outline: none !important;
   		border: none !important;
-   		margin-right: 20px; /* Adds space */
+   		margin-right: 20px; 
    		position: relative;
+		align-items: center;
 	}
-	.icon-email {
-  		font-size: 2em; /* default size for desktop */
+.spacer {
+  height: 2rem;
 }
-
 @media (max-width: 768px) {
   .icon-email {
-    font-size: 2em; /* smaller size for tablets and phones */
+    font-size: 3em; /* smaller size for tablets and phones */
   }
 }
 	.icon-social {
   		font-size: 3em; /* default size for desktop */
 }
+
 
 @media (max-width: 768px) {
   .icon-social {
@@ -368,8 +369,34 @@ input, select, textarea {
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
-  border: none;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  margin: 0 auto;
+  z-index: 30;
 }
+.reel-container {
+  max-width: 800px;
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  position: relative;
+  margin: 0 auto;
+  
+}
+
+.reel-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
+.footer {
+  z-index: 50;
+}
+
+
 /* Form */
 
 	form {
@@ -1290,8 +1317,7 @@ a.icon * {
 		position: relative;
 		min-height: 100vh;
 		width: 100%;
-		padding: 4rem 2rem;
-		z-index: 3;
+		
 	}
 
 		#wrapper:before {
@@ -1357,6 +1383,7 @@ a.icon * {
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
 			margin-top: 3.5rem;
+			z-index: 1000;
 		}
 
 			#header > *:before {
@@ -1371,7 +1398,7 @@ a.icon * {
 			}
 
 		#header > :first-child {
-			margin-top: 10;
+			margin-top: 0;
 		}
 
 			#header > :first-child:before {
@@ -1422,7 +1449,7 @@ a.icon * {
 			}
 
 				#header .content .inner > :last-child {
-					margin-bottom: 0;
+					margin-bottom: 2rem;
 				}
 
 			#header .content p {
@@ -1514,7 +1541,7 @@ a.icon * {
 			body.is-preload #header .content .inner {
 				max-height: 0;
 				padding-top: 0;
-				padding-bottom: 0;
+				padding-bottom: 20;
 				opacity: 0;
 			}
 
@@ -1560,11 +1587,11 @@ a.icon * {
 		@media screen and (max-width: 480px) {
 
 			#header {
-				padding: 1.5rem 0;
+				padding: 10rem 0;
 			}
 
 				#header .content .inner {
-					padding: 2.5rem 0;
+					padding: 8.5rem 0;
 				}
 
 				#header nav ul {
@@ -1699,7 +1726,7 @@ a.icon * {
 		@media screen and (max-width: 736px) {
 
 			#main article {
-				padding: 3.5rem 2rem 0.5rem 2rem ;
+				padding: 1.5rem 2rem 0.5rem 2rem ;
 			}
 
 				#main article .close:before {

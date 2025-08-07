@@ -338,7 +338,8 @@ input, select, textarea {
 		align-items: center;
 	}
 .spacer {
-  height: 2rem;
+  margin-top: 50px; /* Adds space above the spacer */
+  margin-bottom: 50px; /* Adds space below the spacer */
 }
 @media (max-width: 768px) {
   .icon-email {

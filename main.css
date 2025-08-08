@@ -376,11 +376,11 @@ input, select, textarea {
   z-index: 30;
 }
 .reel-container {
-  max-width: 800px;
+  max-width: 720px;
   width: 100%;
   aspect-ratio: 16 / 9; 
   position: relative;
-  height: auto;
+  padding-top: 33%;
   margin: 0 auto;
   
 }

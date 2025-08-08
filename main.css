@@ -380,6 +380,7 @@ input, select, textarea {
   width: 100%;
   aspect-ratio: 16 / 9; 
   position: relative;
+  height: auto;
   margin: 0 auto;
   
 }
